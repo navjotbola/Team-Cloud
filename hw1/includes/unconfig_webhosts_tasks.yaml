@@ -1,0 +1,17 @@
+# Tasks to cleanup configuration of apache
+- name: Stop Apache service
+  service:
+    name: httpd
+    state: stopped
+
+- name: Remove Apache service
+  package:
+    name: httpd
+    state: absent
+
+- name: Cleanup /var/www/html
+  file:
+    path: "/var/www/html/{{ item.rsplit('/', 1)[-1] }}"
+    state: absent
+  with_fileglob:
+    - "backend/*"

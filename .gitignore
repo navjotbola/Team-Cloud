@@ -1,2 +1,5 @@
-.swp
-.retry
+*.swp
+*.retry
+*.swo
+*.log
+*.pyc
