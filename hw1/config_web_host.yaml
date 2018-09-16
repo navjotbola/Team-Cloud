@@ -1,0 +1,12 @@
+- hosts: webservers
+  tasks:
+    # Disable rollback by default
+    # to enable rollback pass `-e rollback=True` to ansible-playbook command
+    - set_fact:
+        rollback: False
+
+    - include_tasks: includes/config_webhosts_tasks.yaml
+      when: not rollback
+
+    - include_tasks: includes/unconfig_webhosts_tasks.yaml
+      when: rollback
