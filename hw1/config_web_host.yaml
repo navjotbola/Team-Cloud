@@ -5,8 +5,16 @@
     - set_fact:
         rollback: False
 
+    # Include tasks that configure httpd service
+    # This is default behaivour when playbook is executed
+    # The tasks don't get loaded, and executed, when `-e rollback=True`
+    # is passed to ansible-playbook command
     - include_tasks: includes/config_webhosts_tasks.yaml
       when: not rollback
 
+    # Include tasks to stop httpd service and remove httpd package from the
+    # host
+    # This only executes when `-e rollback=True` is passed to ansible-playbook
+    # command
     - include_tasks: includes/unconfig_webhosts_tasks.yaml
       when: rollback
