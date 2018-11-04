@@ -3,7 +3,7 @@ import axios from 'axios';
 import ReactJson from 'react-json-view'
 import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
-class Tweeted extends Component {
+class Retweet extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,18 +12,16 @@ class Tweeted extends Component {
     };
   }
 
-  callApi = async (message) => {
-    console.log('send tweet...', message);
-    axios.post('/tweeted', {
-      message: message
-    })
-    .then((response) => {
-      console.log(response);
-      this.setState({response: response});
-    })
-    .catch(function (error) {
-      console.log(error);
-    });  
+  callApi = async (id) => {
+    axios.post('/retweet', {
+      id: id
+      })
+      .then((response) => {
+        this.setState({response: response});
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
 
   handleBtnClick() {
@@ -39,10 +37,10 @@ class Tweeted extends Component {
     return (
         <Form>
             <FormGroup row>
-                <Label sm={2}>Tweet</Label>
+                <Label sm={2}>Tweet id</Label>
                 <Col sm={10}>
-                    <Input onChange={e => this.onChange(e)} type="text" className="pull-right" placeholder="Enter a tweet here..." />
-                    <Button onClick={() => this.handleBtnClick()} className="m-1 float-sm-right" id="twitter-btn">Tweet</Button>
+                    <Input onChange={e => this.onChange(e)} type="text" className="pull-right" placeholder="Tweet id you want to retweet" />
+                    <Button onClick={() => this.handleBtnClick()} className="m-1 float-sm-right" id="twitter-btn">Retweet</Button>
                 </Col>
             </FormGroup>
             <ReactJson src={response} collapsed={true} />
@@ -51,4 +49,4 @@ class Tweeted extends Component {
   }
 }
 
-export default Tweeted;
+export default Retweet;
