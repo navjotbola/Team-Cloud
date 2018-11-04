@@ -23,6 +23,7 @@
     "express": "^4.16.4",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
+    "react-json-view": "^1.19.1",
     "reactstrap": "^6.5.0",
     "twit": "^2.2.11"
   }
