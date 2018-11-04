@@ -2,9 +2,8 @@ FROM node
 WORKDIR /usr/src/app
 COPY twitRestAPI /usr/src/app
 RUN npm install
-RUN npm install --save-dev mocha
-RUN npm install --save-dev chai
-RUN npm install --save-dev supertest
+RUN npm run client-install
 RUN npm test
+ENV DANGEROUSLY_DISABLE_HOST_CHECK=true
 EXPOSE 8080
-CMD [ "npm", "start" ]
+CMD [ "npm", "run", "dev" ]
