@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "client-install": "cd client && npm install",
     "start": "node server.js",
     "server": "nodemon server.js",
@@ -14,7 +14,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^1.18.5"
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.5",
+    "supertest": "^3.3.0"
   },
   "dependencies": {
     "axios": "^0.18.0",
