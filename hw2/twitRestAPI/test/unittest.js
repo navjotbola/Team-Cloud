@@ -1,13 +1,13 @@
 var request = require('supertest'),
     expect = require('chai').expect,
-    api = require('api/routes/routes');
+    api = require('../server');
 
 describe("UnitTest", function() {
 
     describe('searchData', function() {
-        it('Performs GET on /searchData/:username api', function(done) {
+        it('Performs GET on /searchedData/:username api', function(done) {
             request(api)
-                .get('/searchData/diptivs')
+                .get('/searchedData/diptivs')
                 .expect(200)
                 .end(function(err, resp){
                     var resp_data = JSON.parse(resp.text);
@@ -21,7 +21,7 @@ describe("UnitTest", function() {
         it('Performs POST on /tweeted api', function() {
             var success = { "reply": "successfully tweeted" }
             request(api)
-                .post('/searchData/diptivs')
+                .post('/tweeted')
                 .send({"message": "test message"})
                 .expect(200)
                 .end(function(err, resp){

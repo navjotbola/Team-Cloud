@@ -16,4 +16,6 @@ app.use(function(req, res) {
   res.status(404).send({url: req.originalUrl + ' not found'})
 });
 
+module.exports = app;
+
 console.log('TwitterAPIApp RESTful API server started on: ' + port);
