@@ -1,5 +1,5 @@
 [webservers]
-ec2-54-219-131-217.us-west-1.compute.amazonaws.com
+ec2-54-241-153-112.us-west-1.compute.amazonaws.com
 
 [webservers:vars]
 ansible_ssh_user=ec2-user
