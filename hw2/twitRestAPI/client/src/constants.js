@@ -1,0 +1,9 @@
+export const SEARCH_API = 'Search Data';
+export const TWEETED_API = 'Search 2';
+export const ANOTHER_API = 'Search 2';
+// export const SEARCH_API = 'Search Data';
+// export const SEARCH_API = 'Search Data';
+// export const SEARCH_API = 'Search Data';
+// export const SEARCH_API = 'Search Data';
+// export const SEARCH_API = 'Search Data';
+// export const SEARCH_API = 'Search Data';
