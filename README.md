@@ -1,5 +1,5 @@
 # Cloud272
 * Parvizsho “Viz” Aminov (Team Leader)
-* Navjot Bola 
+* Navjot Bola
 * Dipti Shiralkar
 * Meghana Yoganarasimha
