@@ -1,0 +1,8 @@
+{
+  "body": "{\"firstName\":\"User\",\"lastName\":\"userlast2\", \"role\":\"developer\",\"emailId\":\"meg2@gmail.com\"}",
+  "requestContext": {
+    "identity": {
+      "cognitoIdentityId": "DemoUserDev"
+    }
+  }
+}

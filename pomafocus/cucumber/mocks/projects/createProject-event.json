@@ -1,0 +1,8 @@
+{
+  "body": "{\"projectName\":\"Cloud_Project\",\"projectDescription\":\"Setup\", \"projectStatus\":\"New\", \"projectOwner\":\"DemoUser\",\"projectContributors\":[\"DemoUserDev\",\"g5\"],\"projectStartDate\":\"2016-02-15\",\"projectEndDate\":\"2016-02-18\"}",
+"requestContext": {
+    "identity": {
+      "cognitoIdentityId": "DemoUserDev"
+    }
+  }
+  }

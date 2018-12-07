@@ -1,0 +1,52 @@
+{
+  "name": "pomafocus",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "aws-amplify": "^1.1.10",
+    "aws-amplify-react": "^2.1.5",
+    "chart.js": "^1.1.1",
+    "classnames": "^2.2.6",
+    "moment": "^2.22.2",
+    "randomcolor": "^0.5.3",
+    "react": "^16.6.3",
+    "react-addons-update": "^15.6.2",
+    "react-beautiful-dnd": "^10.0.2",
+    "react-big-calendar": "^0.20.2",
+    "react-bootstrap": "^0.32.4",
+    "react-chartjs": "^1.2.0",
+    "react-dates": "^18.2.2",
+    "react-dom": "^16.6.3",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "react-select": "^2.1.1",
+    "react-sortable-hoc": "^0.8.4",
+    "react-table": "^6.8.6",
+    "react-timer-machine": "^1.0.1",
+    "react-toastify": "^4.4.3",
+    "react-toastr": "^3.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "predeploy:dev": "REACT_APP_ENV=pomafocusdev npm run build",
+    "deploy:dev": "aws s3 sync build/ s3://pomafocus-dev --delete",
+    "postdeploy:dev": "aws cloudfront create-invalidation --distribution-id E18EJWHL5U00R8 --paths '/*' && aws cloudfront create-invalidation --distribution-id E24V0E17YDEBW2 --paths '/*'",
+    "predeploy:prod": "REACT_APP_ENV=pomafocusprod npm run build",
+    "deploy:prod": "aws s3 sync build/ s3://pomafocus --delete",
+    "postdeploy:prod": "aws cloudfront create-invalidation --distribution-id EDXFTJ87VI1Z5 --paths '/*' && aws cloudfront create-invalidation --distribution-id E2Y7OQG6PNS5SL --paths '/*'",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

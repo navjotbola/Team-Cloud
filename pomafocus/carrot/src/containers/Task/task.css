@@ -1,0 +1,59 @@
+.task-container {
+    margin-top: 45px;
+}
+
+.task-menu-bar {
+    margin: 10px;
+    color: #5c6e7e;
+    border-radius: 5px;
+    position: relative;
+    height: 55px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+/* Task card */
+.task-card-big {
+    margin: 10px;
+    background-color: #F4F5F7;
+    color: #5c6e7e;
+    padding: 20px 40px;
+    border-radius: 5px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    position: relative;
+    height: 500px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+.task-card-big span {
+    display: block;
+}
+.task-card-title-big {
+    font-weight: bolder;
+    color: #FA6348;
+}
+.task-card-text-label {
+    font-weight: bolder;
+    margin: 15px 0px;
+    color: #6c757d
+}
+.task-card-text-block {
+    margin: 10px 0px;
+}
+.done-big {
+    border: 3px solid #32CD32;
+}
+
+.alert.alert-danger {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 115px;
+}
