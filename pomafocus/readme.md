@@ -10,8 +10,6 @@
 
 ![architecture](https://user-images.githubusercontent.com/32143377/49681242-2aacd700-fa53-11e8-8de0-98339ab3255d.PNG)
 
-## Sample screens:
-
 
 
 
