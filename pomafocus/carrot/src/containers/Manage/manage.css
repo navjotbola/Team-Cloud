@@ -1,0 +1,43 @@
+.tasks-container {
+    margin-top: 45px;
+}
+div.inline { float:left; }
+
+/* Task card */
+.task-card {
+    margin: 10px;
+    background-color: #FFDAB9;
+    color: #5c6e7e;
+    padding: 10px;
+    border-radius: 5px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    position: relative;
+    width: 260px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+.task-card:hover {
+    margin: 10px;
+    cursor: pointer;
+    background-color: #caad93;
+}
+.task-card span {
+    display: block;
+}
+.task-card-title{
+    font-weight: bolder;
+}
+.done {
+    background-color: #32CD32;
+    color: white;
+}
+.done:hover{
+    background-color: #2ca328;
+    cursor: pointer;
+}
