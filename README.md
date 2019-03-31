@@ -1,12 +1,10 @@
-# Cloud272
+# team cloud
 
 University Name : http://www.sjsu.edu/ 
 
 Course : Cloud Technologies
 
 Professor : Andrew Bond
-
-ISA : Savitri Swapna Maddula 
 
 Team : 
 
